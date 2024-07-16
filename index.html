@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning And Earning Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<header style="display: flex; justify-content: space-around;">
+    <img src="ictdd.png" alt="" width="128px" height="75px">
+    <img src="ledp.png" alt="" width="225px" height="100px">
+    <img src="mujib100.png" alt="" width="155px" height="78px">
+</header>
+
+
+<body style="background-image:url(bg.png)">
+    <h2 style="color: rgb(236,135,1);">Student Registration Form</h2>
+    <hr>
+
+    <h3>Please enter relevent information</h3>
+    <hr border-top="1px dotted black">
+    
+    <p><small>Mandatory Fields*</small></p>
+    
+    <table style="text-align: left;">
+        <th style="padding-left: 100px;>
+    <form>
+        <h3>Divison <span style=" font-size:x-small;">(Institute District: Where you want to do your course)*</span>
+            </h3>
+            <select name="division" id="division" required>Divison
+                <option value="">--select one--</option>
+                <option value="dhaka">Dhaka</option>
+                <option value="barishal">Barishal</option>
+                <option value="chattogram">Chattogram</option>
+                <option value="khulna">Khulna</option>
+                <option value="rajshahi">Rajshahi</option>
+                <option value="rangpur">Rangpur</option>
+                <option value="mymensingh">Mymensingh</option>
+                <option value="sylhet">Sylhet</option>
+            </select>
+            
+            <div class="course">
+                <h3>Course*</h3>
+                <select name="course" id="course" required>
+                    <option value="">--select one--</option>
+                    <option value="Web Design">Web Design</option>
+                    <option value="Graphics Design">Graphics Design</option>
+                    <option value="Digital marketing">Digital marketing</option>
+                </select>
+            </div>
+            
+            <br>
+            <br>
+            Student's name* <br>
+            <input type="text" name="name" id="name" required><br>
+            Father's Name* <br>
+            <input type="text" name="name" id="name" required><br>
+            Mother's Name* <br>
+            <input type="text" name="name" id="name" required>
+            
+            <div class="dob">
+                <fieldset>
+                    <legend>Date of Birth*:</legend>
+                    <label for="date">Date:</label>
+                    <input type="date">
+                </fieldset>
+            </div>
+
+            <div class="gender">
+                <h3>Gender</h3>
+                <input type="radio" name="gender">
+                <label for="male">male</label>
+                <input type="radio" name="gender">
+                <label for="female">female</label>
+            </div>
+
+            <div class="handicapped">
+                <label>
+                    <h4>Physically Handicapped*</h4>
+                </label>
+                <input type="radio" name="needs">
+                <label for="yes">YES</label>
+                <input type="radio" name="needs">
+                <label for="no">NO</label>
+            </div>
+            
+            <div class="email">
+                <h4> Email*</h4>
+                <input type="text">
+                <p><small>(e.g: example@mail.com)</small></p>
+            </div>
+
+            <div class="phone">
+                <h4> Phone (Must be 11 Digits)*</h4>
+                <input type="text">
+                <p><small>(e.g:0155123456)</small></p>
+            </div>
+        </th>
+        
+        <th style="padding-left: 300px; padding-right: 100px;">
+
+            <div class="identification">
+                <label for="">
+                    <h3>Identification Type*</h3>
+                </label>
+                <select name="type" id="type" required>
+                    <option value="">--select one--</option>
+                    <option value="Birth Certificate NO.">Birth Certificate NO.</option>
+                    <option value="NID NO.">NID NO.</option>
+                </select>
+
+                <label for="">
+                    <p>Identification No. (Must be 10 digits for new NID or 17 digits for old NID. If your National ID
+                        is 13 digits, then please add your birth year with the ID as prefix. Example:
+                        1980XXXXXXXXXXXXX)*</p>
+                </label>
+                <input type="text">
+            </div>
+
+            <div class="district">
+                <label>
+                    <h3>Home District*</h3>
+                </label>
+                <select name="district" id="district" required>Divison
+                    <option value="">--select one--</option>
+                    <option value="dhaka">Dhaka</option>
+                    <option value="rajbari">Rajbari</option>
+                    <option value="narshindi">Narshindi</option>
+                    <option value="tangail">Tangail</option>
+                    <option value="shariatpur">Shariatpur</option>
+                    <option value="madaripur">Madaripur</option>
+                    <option value="manikganj">Manikganj</option>
+                    <option value="Gopalganj">Gopanganj</option>
+                </select>
+            </div>
+            
+            <div class="upazila">
+                <label for="">
+                    <h3>Upzila*</h3>
+                </label>
+                <select name="division" id="division" required>Divison
+                    <option value="">--select one--</option>
+                    <option value="dhaka">Dhaka</option>
+                    <option value="Keraniganj">Keraniganj</option>
+                    <option value="Dohar">Dohar</option>
+                    <option value="Savar">Savar</option>
+                    <option value="Dhamrai">Dhamrai</option>
+                    <option value="Nababganj">Nababganj</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="">
+                    <h3>Village/House No./Road No./Other Alternative*</h3>
+                </label>
+                <input type="text">
+                <label for="">
+                    <h3>Post Office*</h3>
+                </label>
+                <input type="text">
+            </div>
+            
+            <div class="Education">
+                <label for="">
+                    <h3>Educational Qualification*<span style="font-size:x-small;">(Higher Level)</span></h3>
+                </label>
+                <select name="education" id="education" required>Divison
+                    <option value="">--select one--</option>
+                    <option value="Higher Secondary/Equivalent">Higher Secondary/Equivalent</option>
+                    <option value="Bachelor">Bachelor</option>
+                    <option value="Masters">Masters</option>
+                    <option value="P.H.D">P.H.D</option>
+                </select>
+            </div>
+            
+            <div class="computer">
+                <label>
+                    <h4>Have any computer?*</h4>
+                </label>
+                <input type="radio" name="com">
+                <label for="yes">YES</label>
+                <input type="radio" name="com">
+                <label for="no">NO</label>
+            </div>
+
+            <div class="choosefile">
+                <h4>Photograph*</h4>
+                <input type="file" name="photo" required>
+                <p><small>(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</small></p>
+                <h4>Signature*</h4>
+                <input type="file" name="sign" required>
+                <p><small>(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</small></p>
+            </div>
+
+
+
+        </th>
+
+    </table>
+    </form>
+</body>
+
+</html>
